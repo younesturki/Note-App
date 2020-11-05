@@ -10,8 +10,6 @@
     </div>
 
     <div class="notes-list">
-        <app-note-card [title]="'Testing one two three'" [body]="'Testing test'"></app-note-card>
-        <app-note-card></app-note-card>
-        <app-note-card></app-note-card>
+        <app-note-card *ngFor="let note of notes" [title]="'note.title'" [body]="'note.body'"></app-note-card>
     </div>
 </div>
