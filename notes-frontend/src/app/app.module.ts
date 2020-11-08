@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,6 +9,7 @@ import { MainLayoutComponent } from './pages/main-layout/main-layout.component';
 import { NoteCardComponent } from './note-card/note-card.component';
 import { DetailsComponent } from './pages/details/details.component';
 import { FormsModule } from '@angular/forms';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
